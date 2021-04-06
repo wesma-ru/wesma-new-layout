@@ -1,0 +1,61 @@
+.footer-inner {
+    display: flex;
+}
+
+.footer-inner__item {
+    flex-basis: 30%;
+    padding: 0 20px;
+}
+
+.footer-inner__item .logo {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.footer-inner__title {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: #C3C8DE;
+}
+
+.footer-inner__block {
+    padding: 30px 0;
+    border-top: 1px solid #C3C8DE;
+
+}
+
+.footer-inner__link {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+}
+
+.footer-inner__link:hover {
+    color: $green;
+}
+
+.footer-inner__link--email {
+    text-decoration: underline;
+}
+
+.footer-inner__link--email:hover {
+    text-decoration: none;
+}
+
+.footer-inner__address {
+    display: flex;
+}
+
+.footer-inner__address-title {
+    font-size: 16px;
+    line-height: 18px;
+    color: #000;
+}
+
+.footer-inner__address-info {
+   font-size: 12px;
+   line-height: 1.5;
+}

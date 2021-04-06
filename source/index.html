@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+
+  <title>Главная - Wesma</title>
+  <script>
+    window.requestAnimFrame = (function () {
+      return (
+        window.requestAnimationFrame ||
+        window.webkitRequestAnimationFrame ||
+        window.mozRequestAnimationFrame ||
+        window.oRequestAnimationFrame ||
+        window.msRequestAnimationFrame ||
+        function (callback) {
+          window.setTimeout(callback);
+        }
+      );
+    });
+
+    function init(elemid) {
+      let canvas = document.getElementById(elemid),
+        c = canvas.getContext("2d"),
+        w = (canvas.width = window.innerWidth),
+        h = (canvas.height = window.innerHeight);
+      c.fillStyle = "rgba(30,30,30,1)";
+      c.fillRect(0, 0, w, h);
+      return {
+        c: c,
+        canvas: canvas
+      };
+    }
+  </script>
+</head>
+
+<body>
+  <div class="full">
+    <div class="main-menu">
+      <div class="main-menu__item">
+        <div class="logo">
+          <img src="../img/logo.png" alt="" width="210">
+        </div>
+        <div class="name">
+          Digital-агентство полного цикла
+        </div>
+        <div class="contacts-link">
+          <a class="phone-link" href="tel:84951182474">+7(495)118-24-74</a>
+          <a class="email-link" href="mailto:manager@wesma.ru">manager@wesma.ru</a>
+        </div>
+      </div>
+      <div class="main-menu__item">
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li class="main-nav-list__item"><a href="#">О компании</a>
+            </li>
+            <li class="main-nav-list__item"><a href="#">Портфолио</a>
+            </li>
+            <li class="main-nav-list__item"><a href="#">Кейсы</a>
+            </li>
+            <li class="main-nav-list__item"><a href="#">Контакты</a>
+            </li>
+          </ul>
+          <div class="main-nav__title text text--center">Наши услуги</div>
+          <ul class="service-nav-list">
+            <li class="service-nav-list__item"><a href="#">Создание сайтов</a>
+            </li>
+            <li class="service-nav-list__item"><a href="#">Продвижение сайтов</a>
+            </li>
+            <li class="service-nav-list__item"><a href="#">Поддержка сайтов</a>
+            </li>
+            <li class="service-nav-list__item"><a href="#">Интернет-реклама</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="rating-wrapper">
+          <div class="rating">
+            <div class="rating__block">
+              <div class="rating__item">
+                <img src="../img/runet.png" alt="" width="40">
+              </div>
+              <div class="rating__item">
+                <div class="rating__text">
+                  Рейтинг Рунета
+                  <br>2020
+                </div>
+              </div>
+            </div>
+            <ul class="rating-list">
+              <li class="rating-list__item">
+                <!-- <div class="rating-list__img">
+                  <img src="../img/runet.png" alt="">
+                </div> -->
+                <div class="rating-list__text">
+                  <a href="#">2 место</a> в разработке
+                </div>
+              </li>
+              <li class="rating-list__item">
+                <!-- <div class="rating-list__img">
+                  <img src="../img/runet.png" alt="">
+                </div> -->
+                <div class="rating-list__text">
+                  <a href="#">2 место</a> в разработке
+                </div>
+              </li>
+              <li class="rating-list__item">
+                <!-- <div class="rating-list__img">
+                  <img src="../img/runet.png" alt="">
+                </div> -->
+                <div class="rating-list__text">
+                  <a href="#">2 место</a> в разработке
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="main-menu__item">
+        <div class="btn-actions">
+          <div class="btn-magic-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+              <defs>
+                <filter id="goo">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                    result="goo" />
+                  <feComposite in="SourceGraphic" in2="goo" />
+                </filter>
+              </defs>
+            </svg>
+            <span class="bubble-container">
+              <a href="#" class="button button-bubble">
+                Заказать звонок
+              </a>
+              <span class="button-bubble__effect-container">
+                <span class="circle top-left"></span>
+                <span class="circle top-left"></span>
+                <span class="circle top-left"></span>
+
+                <span class="button effect-button"></span>
+
+                <span class="circle bottom-right"></span>
+                <span class="circle bottom-right"></span>
+                <span class="circle bottom-right"></span>
+              </span>
+            </span>
+          </div>
+          <div class="btn-magic-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+              <defs>
+                <filter id="goo">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                    result="goo" />
+                  <feComposite in="SourceGraphic" in2="goo" />
+                </filter>
+              </defs>
+            </svg>
+
+            <span class="bubble-container">
+              <a href="#" class="button button-bubble button-bubble--border">
+                Пригласить на тендер
+              </a>
+              <span class="button-bubble__effect-container">
+                <span class="circle top-left"></span>
+                <span class="circle top-left"></span>
+                <span class="circle top-left"></span>
+
+                <span class="button effect-button effect-button--border"></span>
+
+                <span class="circle bottom-right"></span>
+                <span class="circle bottom-right"></span>
+                <span class="circle bottom-right"></span>
+              </span>
+            </span>
+          </div>
+        </div>
+        <div class="social-link">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <header class="page-header">
+
+    </header>
+    <main class="page-main">
+      <canvas class="main-canvas" id="canvas"></canvas>
+      <section class="main-screen">
+        <div class="wrapper">
+          <div class="main-wrapper">
+            <div class="main-wrapper__item">
+              <div class="main-title title-magic">
+                Создание сайтов, их продвижение, поддержка и реклама
+              </div>
+              <div class="tagline">Ваши поиски закончились</div>
+            </div>
+            <div class="main-wrapper__item">
+              <div class="slider-wrapper">
+                <div class="slider-number">
+                  <div>
+                    <div class="number-info">
+                      <div class="number-info__title">
+                        12+
+                      </div>
+                      <div class="number-info__img">
+                        <img src="img/svsh.png" width="150" alt="">
+                      </div>
+                      <div class="number-info__text">
+                        лет опыта на рынке интернет маркетинга
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="number-info">
+                      <div class="number-info__title">
+                        400+
+                      </div>
+                      <div class="number-info__img">
+                        <img src="img/svsh.png" width="150" alt="">
+                      </div>
+                      <div class="number-info__text">
+                        реализованных проектов
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="number-info">
+                      <div class="number-info__title">
+                        2
+                      </div>
+                      <div class="number-info__img">
+                        <img src="img/svsh.png" width="150" alt="">
+                      </div>
+                      <div class="number-info__text">
+                        место студий России по разработке e-commerce сайтов (Рейтинг Рунета)
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="number-info">
+                      <div class="number-info__title">
+                        5
+                      </div>
+                      <div class="number-info__img">
+                        <img src="img/svsh.png" width="150" alt="">
+                      </div>
+                      <div class="number-info__text">
+                        место SEO студий России в e-commerce тематике (Рейтинг Рунета)
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="number-info">
+                      <div class="number-info__title">
+                        5
+                      </div>
+                      <div class="number-info__img">
+                        <img src="img/svsh.png" width="150" alt="">
+                      </div>
+                      <div class="number-info__text">
+                        место SEO студий России в e-commerce тематике (Рейтинг Рунета)
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="number-info">
+                      <div class="number-info__title">
+                        5
+                      </div>
+                      <div class="number-info__img">
+                        <img src="img/svsh.png" width="150" alt="">
+                      </div>
+                      <div class="number-info__text">
+                        место SEO студий России в e-commerce тематике (Рейтинг Рунета)
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="number-info">
+                      <div class="number-info__title">
+                        5
+                      </div>
+                      <div class="number-info__img">
+                        <img src="img/svsh.png" width="150" alt="">
+                      </div>
+                      <div class="number-info__text">
+                        место SEO студий России в e-commerce тематике (Рейтинг Рунета)
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="arrows-wrapper">
+                  <div class="arrows-main arrows-main--number">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="wrapper">
+          <ul class="logo-partners">
+            <li class="logo-partners__item">
+              <img src="../img/bitrix_gold_partner.png" width="150" alt="">
+            </li>
+            <li class="logo-partners__item">
+              <img src="../img/webasyst_partner.png" width="100" alt="">
+            </li>
+            <li class="logo-partners__item">
+              <img src="../img/cs-cart_partner.png" width="100" alt="">
+            </li>
+            <li class="logo-partners__item">
+              <img src="../img/yandex_agency.png" width="100" alt="">
+            </li>
+            <li class="logo-partners__item">
+              <img src="../img/facebook_marketing_partner.jpg" width="150" alt="">
+            </li>
+            <li class="logo-partners__item">
+              <img src="../img/target_partner.png" width="100" alt="">
+            </li>
+            <li class="logo-partners__item">
+              <img src="../img/google_partner.png" width="150" alt="">
+            </li>
+          </ul>
+          <div class="random-phrase-container">
+            К нам обращаются, если нужно <div class="random-phrase" id="random-phrase">фраза</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="develop">
+        <div class="develop__wrap">
+          <div class="develop__list">
+            <div class="develop__item" data-image="../img/section-develop/image-bg-1.jpg">
+              <div class="develop__number">01</div>
+              <div class="develop__name">Создание сайтов</div>
+              <div class="develop__word">С</div>
+              <div class="develop__line line">
+                <div class="x line__top top line-item"></div>
+                <div class="y line__left left line-item"></div>
+                <div class="y line__right right line-item"></div>
+                <div class="x line__bottom bottom line-item"></div>
+              </div>
+            </div>
+
+            <div class="develop__item" data-image="../img/section-develop/image-bg-2.jpg">
+              <div class="develop__number">02</div>
+              <div class="develop__name">Продвижение сайтов</div>
+              <div class="develop__word">П</div>
+              <div class="develop__line line">
+                <div class="x line__top top"></div>
+                <div class="y line__left left"></div>
+                <div class="y line__right right"></div>
+                <div class="x line__bottom bottom"></div>
+              </div>
+            </div>
+
+            <div class="develop__item" data-image="../img/section-develop/image-bg-3.jpg">
+              <div class="develop__number">03</div>
+              <div class="develop__name">Поддержка сайтов</div>
+              <div class="develop__word">П</div>
+              <div class="develop__line line">
+                <div class="x line__top top"></div>
+                <div class="y line__left left"></div>
+                <div class="y line__right right"></div>
+                <div class="x line__bottom bottom"></div>
+              </div>
+            </div>
+
+            <div class="develop__item" data-image="../img/section-develop/image-bg-4.jpg">
+              <div class="develop__number">04</div>
+              <div class="develop__name">Реклама в интернете</div>
+              <div class="develop__word">Р</div>
+              <div class="develop__line line">
+                <div class="x line__top top"></div>
+                <div class="y line__left left"></div>
+                <div class="y line__right right"></div>
+                <div class="x line__bottom bottom"></div>
+              </div>
+            </div>
+          </div>
+          <div class="develop__background">
+
+          </div>
+        </div>
+      </section>
+
+      <section class="case">
+        <div class="wrapper">
+          <div class="case__wrap">
+            <div class="case__list">
+              <div class="case__item"></div>
+              <div class="case__item"></div>
+              <div class="case__item"></div>
+              <div class="case__item"></div>
+              <div class="case__item"></div>
+              <div class="case__item"></div>
+              <div class="case__item"></div>
+              <div class="case__item"></div>
+              <div class="case__item"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-partners">
+
+
+        <div class="section-partners__wrap">
+
+          <div class="wrapper">
+            <div class="section-partners__title">СТИРАЕМ БОЛЬ НАШИХ ПАРТНЕРОВ</div>
+            <div class="section-partners__subtitle">ПОГРУЖАЕМСЯ В ВАШ БИЗНЕС</div>
+          </div>
+
+          <div class="section-partners__wrap-list">
+            <div class="wrapper">
+              <div class="section-partners__lsit">
+                <div class="section-partners__item">
+                  <div class="section-partners__text" id="snapText">
+                    Сайт уже есть, но он <span>не продает</span>. А нам обещали золотые горы
+                  </div>
+                  <div class="section-partners__item-canvas"></div>
+                </div>
+
+                <div class="section-partners__item">
+                  <div class="section-partners__text">
+                    Клиенты уходят к конкурентам, у <span>которых все дороже</span>
+                  </div>
+                  <div class="section-partners__item-canvas"></div>
+                </div>
+
+                <div class="section-partners__item">
+                  <div class="section-partners__text">
+                    <span>Нас не слышут</span> и не понимают на том конце трубки, результаты не соответствуют ожиданию
+                  </div>
+                  <div class="section-partners__item-canvas"></div>
+                </div>
+
+                <div class="section-partners__item">
+                  <div class="section-partners__text">
+                    Хочу перпективные аккаунты в <span>инстаграме</span> в <span>VK</span> и <span>FB</span>, они есть,
+                    но толку нет, а у конкурентов все отлично
+                  </div>
+                  <div class="section-partners__item-canvas"></div>
+                </div>
+
+                <div class="section-partners__item">
+                  <div class="section-partners__text">
+                    Выдачу <span>завоевали маркетплейсы</span>, как их обогнать, <span>SEO не работает</span>,
+                    выкидываем деньги в бездонную яму
+                  </div>
+                  <div class="section-partners__item-canvas"></div>
+                </div>
+
+                <div class="section-partners__item">
+                  <div class="section-partners__text">
+                    Деньги есть, теперь хотим стать №1, <span>но не знаем как</span>
+                  </div>
+                  <div class="section-partners__item-canvas"></div>
+                </div>
+
+                <div class="section-partners__item">
+                  <div class="section-partners__text">
+                    Наш отдел маркетинга - одни бесполезных нытики, реклама супер - <span>результов ноль</span>
+                  </div>
+                  <div class="section-partners__item-canvas"></div>
+                </div>
+
+                <div class="section-partners__item">
+                  <div class="section-partners__text">
+                    Просто устали думать внутри своей компании, <span>нужен свежий взгляд</span> со стороны, <span>нужен
+                      креатив</span>
+                  </div>
+                  <div class="section-partners__item-canvas"></div>
+                </div>
+
+                <div class="section-partners__item">
+                  <div class="section-partners__text">
+                    Уже все клиенты <span>контролируют бизнес</span> и менеджеров с телефона, я тоже хочу
+                  </div>
+                  <div class="section-partners__item-canvas"></div>
+                </div>
+
+                <div class="section-partners__item">
+                  <div class="section-partners__text">
+                    Работаем 24/7, <span>фактически не отдыхаем</span>, почти нет времени на семью, нужно
+                    автоматизировать все
+                  </div>
+                  <div class="section-partners__item-canvas"></div>
+                </div>
+
+                <div class="section-partners__item">
+                  <div class="section-partners__text">
+                    В нашей нише <span>жёсткая конкуренция</span>, нужно быть в тренде
+                  </div>
+                  <div class="section-partners__item-canvas"></div>
+                </div>
+
+                <div class="section-partners__item">
+                  <div class="section-partners__text">
+                    Как <span>повысить средний чек</span> и продавать в разы больше
+                  </div>
+                  <div class="section-partners__item-canvas"></div>
+                </div>
+
+                <div class="section-partners__item">
+                  <div class="section-partners__text">
+                    <span>Влил столько денег</span> в рекламу, а заявок почти нет. Вчера была одна, да и та от
+                    конкурентов
+                  </div>
+                  <div class="section-partners__item-canvas"></div>
+                </div>
+              </div>
+            </div>
+            <div class="section-partners__canvas"></div>
+            <div class="section-partners__anchor">
+              <div class="section-partners__text-anchor">Теперь будет ИНАЧЕ</div>
+              <a href="#" class="section-partners__button-anchor">Связь с эскпертами</a>
+            </div>
+          </div>
+          <div class="wrapper">
+            <!-- <div class="section-partners__button">
+              <div class="section-partners__button-clear">Стереть</div>
+              <div class="section-partners__button-return">Вернуть</div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="wrapper">
+          <div class="main-title">
+            Что значит хороший сервис?
+          </div>
+          <div class="tagline">
+            Самый простой критерий - это клиенты, довольные нашей работой. <br>
+            90 клиентов из 120 работают с нами больше 2 лет.
+          </div>
+          <div class="stat">
+            <div class="stat__item">
+              <div class="stat__number">
+                90
+              </div>
+              <div class="stat__text">
+                постоянных клиентов
+              </div>
+              <div class="stat__info">
+                оценили наши услуги и доверяют нам больше 2 лет
+              </div>
+            </div>
+            <div class="stat__item">
+              <div class="stat__last-year">2020г.</div>
+              <div class="stat__number">
+                120
+              </div>
+              <div class="stat__text">
+                наших клиентов
+              </div>
+              <div class="stat__present-year">2021г.</div>
+            </div>
+            <div class="stat__item">
+              <div class="stat__number">
+                30
+              </div>
+              <div class="stat__text">
+                новых клиентов
+              </div>
+              <div class="stat__info">
+                присоединились к нам в период с 2020 года
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sliderWrapper">
+        <div class="wrapper">
+          <div class="main-title">Нам доверяют</div>
+          <div class="tabs mainTabs clearfix">
+            <span class="active" data-id="1">Благодарности</span>
+            <span data-id="2">Регалии</span>
+          </div>
+          <div class="tabsTextWrapper tabsSliders">
+            <div class="active tabCat" data-id="1">
+              <div class="bgNavi">
+                <ul class="listNavi">
+                  <li>#Сбербанк</li>
+                  <li>#KROWN</li>
+                </ul>
+                <div class="sliderArrows"></div>
+              </div>
+              <div class="sliderTrustWrapper">
+                <div class="sliderTrust">
+                  <div class="slideTr">
+                    <div class="imgTr">
+                      <img src="img/slide-img.png" alt="" data-href="img/slide-img.png">
+                    </div>
+                    <div class="infoTr">
+                      <span class="titleTr">Отзыв ПАО «Сбербанк»</span>
+                      <img src="img/slide-logo.png" alt="" class="brandImg">
+                      <div class="textTr">
+                        <p>Приятно отметить трудолюбие и ответственное отношение к делу всех сотрудников компании,
+                          способность оперативно и качественно решать задачи любой сложности.</p>
+                        <p>Приятно отметить трудолюбие и ответственное отношение к делу всех сотрудников компании,
+                          способность оперативно и качественно решать задачи любой сложности.</p>
+                      </div>
+                    </div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="slideTr">
+                    <div class="imgTr">
+                      <img src="img/slide-img.png" alt="" data-href="img/slide-img.png">
+                    </div>
+                    <div class="infoTr">
+                      <span class="titleTr">Отзыв ПАО «Сбербанк»</span>
+                      <img src="img/slide-logo.png" alt="" class="brandImg">
+                      <div class="textTr">
+                        <p>Приятно отметить трудолюбие и ответственное отношение к делу всех сотрудников компании,
+                          способность оперативно и качественно решать задачи любой сложности.</p>
+                        <p>Приятно отметить трудолюбие и ответственное отношение к делу всех сотрудников компании,
+                          способность оперативно и качественно решать задачи любой сложности.</p>
+                      </div>
+                    </div>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+                <div class="sliderArrows roundBl"></div>
+                <div class="naviRW">
+                  <div class="arrows-wrapper">
+                    <div class="arrows-main arrows-main--review">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ourClients ">
+        <div class="wrapper">
+          <div class="main-title">Наши клиенты</div>
+
+          <div class="itemsAlbum">
+            <div class="imgItem">
+              <img title="taxicel_logo" alt="taxicel_logo" src="img/taxicel_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="mitsubishi-electric_logo" alt="mitsubishi-electric_logo"
+                src="img/mitsubishi-electric_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="carpet-gold_logo" alt="carpet-gold_logo" src="img/carpet-gold_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="yarex_logo" alt="yarex_logo" src="img/yarex_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="leaderg_logo" alt="leaderg_logo" src="img/leaderg_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="topzdrav_logo" alt="topzdrav_logo" src="img/topzdrav_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="clean-avto_logo" alt="clean-avto_logo" src="img/clean-avto_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="poolstroi_logo" alt="poolstroi_logo" src="img/poolstroi_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="ledflux-logo" alt="ledflux-logo" src="img/ledflux-logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="polimersale_logo" alt="polimersale_logo" src="img/polimersale_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="asal_logo" alt="asal_logo" src="img/asal_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="rogdenie_logo" alt="rogdenie_logo" src="img/rogdenie_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="autosteklo24_logo" alt="autosteklo24_logo" src="img/autosteklo24_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="awgroup_logo" alt="awgroup_logo" src="img/awgroup_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="glass-leader_logo" alt="glass-leader_logo" src="img/glass-leader_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="kromas_logo" alt="kromas_logo" src="img/kromas_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="taxicel_logo" alt="taxicel_logo" src="img/taxicel_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="mitsubishi-electric_logo" alt="mitsubishi-electric_logo"
+                src="img/mitsubishi-electric_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="carpet-gold_logo" alt="carpet-gold_logo" src="img/carpet-gold_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="yarex_logo" alt="yarex_logo" src="img/yarex_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="leaderg_logo" alt="leaderg_logo" src="img/leaderg_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="topzdrav_logo" alt="topzdrav_logo" src="img/topzdrav_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="clean-avto_logo" alt="clean-avto_logo" src="img/clean-avto_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="poolstroi_logo" alt="poolstroi_logo" src="img/poolstroi_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="ledflux-logo" alt="ledflux-logo" src="img/ledflux-logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="polimersale_logo" alt="polimersale_logo" src="img/polimersale_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="asal_logo" alt="asal_logo" src="img/asal_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="rogdenie_logo" alt="rogdenie_logo" src="img/rogdenie_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="autosteklo24_logo" alt="autosteklo24_logo" src="img/autosteklo24_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="awgroup_logo" alt="awgroup_logo" src="img/awgroup_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="glass-leader_logo" alt="glass-leader_logo" src="img/glass-leader_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="kromas_logo" alt="kromas_logo" src="img/kromas_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="clean-avto_logo" alt="clean-avto_logo" src="img/clean-avto_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="poolstroi_logo" alt="poolstroi_logo" src="img/poolstroi_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="ledflux-logo" alt="ledflux-logo" src="img/ledflux-logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="polimersale_logo" alt="polimersale_logo" src="img/polimersale_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="asal_logo" alt="asal_logo" src="img/asal_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="rogdenie_logo" alt="rogdenie_logo" src="img/rogdenie_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="autosteklo24_logo" alt="autosteklo24_logo" src="img/autosteklo24_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="awgroup_logo" alt="awgroup_logo" src="img/awgroup_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="glass-leader_logo" alt="glass-leader_logo" src="img/glass-leader_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="kromas_logo" alt="kromas_logo" src="img/kromas_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="clean-avto_logo" alt="clean-avto_logo" src="img/clean-avto_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="poolstroi_logo" alt="poolstroi_logo" src="img/poolstroi_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="ledflux-logo" alt="ledflux-logo" src="img/ledflux-logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="polimersale_logo" alt="polimersale_logo" src="img/polimersale_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="asal_logo" alt="asal_logo" src="img/asal_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="rogdenie_logo" alt="rogdenie_logo" src="img/rogdenie_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="autosteklo24_logo" alt="autosteklo24_logo" src="img/autosteklo24_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="awgroup_logo" alt="awgroup_logo" src="img/awgroup_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="glass-leader_logo" alt="glass-leader_logo" src="img/glass-leader_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="kromas_logo" alt="kromas_logo" src="img/kromas_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="clean-avto_logo" alt="clean-avto_logo" src="img/clean-avto_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="poolstroi_logo" alt="poolstroi_logo" src="img/poolstroi_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="ledflux-logo" alt="ledflux-logo" src="img/ledflux-logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="polimersale_logo" alt="polimersale_logo" src="img/polimersale_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="asal_logo" alt="asal_logo" src="img/asal_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="rogdenie_logo" alt="rogdenie_logo" src="img/rogdenie_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="autosteklo24_logo" alt="autosteklo24_logo" src="img/autosteklo24_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="awgroup_logo" alt="awgroup_logo" src="img/awgroup_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="glass-leader_logo" alt="glass-leader_logo" src="img/glass-leader_logo.png" />
+            </div>
+            <div class="imgItem">
+              <img title="kromas_logo" alt="kromas_logo" src="img/kromas_logo.png" />
+            </div>
+          </div>
+          <div class="btn-wrapper">
+            <span class="bubble-container clickMore">
+              <span class="button button-bubble button-bubble--border">
+                Еще
+              </span>
+              <span class="button-bubble__effect-container">
+                <span class="circle top-left"></span>
+                <span class="circle top-left"></span>
+                <span class="circle top-left"></span>
+
+                <span class="button effect-button effect-button--border"></span>
+
+                <span class="circle bottom-right"></span>
+                <span class="circle bottom-right"></span>
+                <span class="circle bottom-right"></span>
+              </span>
+            </span>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="wrapper">
+          <div class="form-container">
+            <div class="main-title">Обсудим ваш проект</div>
+            <div class="form-wrapper">
+              <form class="contact-form">
+                <div class="contact-form__item">
+                  <ul class="contact-form__list">
+                    <li class="contact-form__list-item">
+                      <div class="contact-form__list-input">
+                        <input id="firstname" class="input" type="text" placeholder=" " />
+                        <div class="cut"></div>
+                        <label for="firstname" class="placeholder">Имя</label>
+                      </div>
+                    </li>
+                    <li class="contact-form__list-item">
+                      <div class="contact-form__list-input">
+                        <input id="firstname" class="input" type="tel" placeholder=" " />
+                        <div class="cut"></div>
+                        <label for="firstname" class="placeholder">Телефон</label>
+                      </div>
+                    </li>
+                    <li class="contact-form__list-item">
+                      <div class="contact-form__list-input">
+                        <input id="firstname" class="input" type="text" placeholder=" " />
+                        <div class="cut"></div>
+                        <label for="firstname" class="placeholder">URL адрес сайта</label>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="application">
+                    <div class="application__title">
+                      По какому вопросу?
+                    </div>
+                    <div class="application__item">
+                      <input class="radio" id="a" type="radio" name="hopping" value="a" checked>
+                      <label class="radio-label" for="a"><span></span>Создание сайта</label>
+                      <input class="radio" id="b" type="radio" name="hopping" value="b">
+                      <label class="radio-label" for="b"><span></span>SEO продвижение</label>
+                      <input class="radio" id="c" type="radio" name="hopping" value="c">
+                      <label class="radio-label" for="c"><span></span>Реклама в интернете</label>
+                      <input class="radio" id="d" type="radio" name="hopping" value="d">
+                      <label class="radio-label" for="d"><span></span>Техническая поддержка</label>
+                      <input class="radio" id="e" type="radio" name="hopping" value="e">
+                      <label class="radio-label" for="e"><span></span>Комплекс работ</label>
+                      <div class="worm">
+                        <div class="worm__segment"></div>
+                        <div class="worm__segment"></div>
+                        <div class="worm__segment"></div>
+                        <div class="worm__segment"></div>
+                        <div class="worm__segment"></div>
+                        <div class="worm__segment"></div>
+                        <div class="worm__segment"></div>
+                        <div class="worm__segment"></div>
+                        <div class="worm__segment"></div>
+                        <div class="worm__segment"></div>
+                        <div class="worm__segment"></div>
+                        <div class="worm__segment"></div>
+                        <div class="worm__segment"></div>
+                        <div class="worm__segment"></div>
+                        <div class="worm__segment"></div>
+                        <div class="worm__segment"></div>
+                        <div class="worm__segment"></div>
+                        <div class="worm__segment"></div>
+                        <div class="worm__segment"></div>
+                        <div class="worm__segment"></div>
+                        <div class="worm__segment"></div>
+                        <div class="worm__segment"></div>
+                        <div class="worm__segment"></div>
+                        <div class="worm__segment"></div>
+                        <div class="worm__segment"></div>
+                        <div class="worm__segment"></div>
+                        <div class="worm__segment"></div>
+                        <div class="worm__segment"></div>
+                        <div class="worm__segment"></div>
+                        <div class="worm__segment"></div>
+                      </div>
+                    </div>
+                    <div class="application__item">
+                      <div class="checklist">
+                        <input id="01" class="check" type="checkbox" name="r" value="1" checked>
+                        <label class="check-label" for="01">Обсудить SMM</label>
+                        <input id="02" class="check" type="checkbox" name="r" value="2">
+                        <label class="check-label" for="02">Работа с репутацией</label>
+                        <input id="03" class="check" type="checkbox" name="r" value="3">
+                        <label class="check-label" for="03">Аналитика</label>
+                      </div>
+                      <div class="input-box">
+                        <input type="file" name="file">
+                        <input type="text" name="up_file" placeholder="Прикрепите файл" disabled="">
+                        <span>Можно прикреплять файлы pdf, docx, xlsx, rar, zip до 25 Мб</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="contact-form__item">
+                  <div class="contact-form__list-textarea">
+                    <textarea class="textarea" placeholder=""></textarea>
+                    <div class="cut"></div>
+                    <span class="placeholder">Комментарий</span>
+                  </div>
+                  <div class="privacy">
+                    Заполняя данную форму вы соглашаетесь на обработку персональных данных ООО "WESMA"
+                    в соответствии с законом №152-ФЗ "О персональных данных" <a href="#">политика
+                      конфиденциальности.</a>
+                  </div>
+                  <div class="contact-form__btn">
+                    <span class="bubble-container clickMore">
+                      <span class="button button-bubble">
+                        Оставить заявку
+                      </span>
+                      <span class="button-bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="wrapper">
+        <div class="footer-inner">
+          <div class="footer-inner__item">
+            <div class="logo">
+              <img src="../img/logo.png" alt="" width="210">
+            </div>
+            <div class="copyright">
+              Copyright © 2016 – 2021 ООО «WESMA»
+            </div>
+            <a href="#" class="privacy-link">
+              политика конфиденциальности
+            </a>
+          </div>
+          <div class="footer-inner__item">
+            <div class="footer-inner__block">
+              <div class="footer-inner__title">
+                Отдел продаж
+              </div>
+              <a href="tel:84951182474" class="footer-inner__link">
+                +7 (495) 118-24-74
+              </a>
+              <a href="mailto:manager@wesma.ru" class="footer-inner__link footer-inner__link--email">
+                manager@wesma.ru
+              </a>
+            </div>
+            <div class="footer-inner__block">
+              <div class="footer-inner__title">
+                Вакансии и трудоустройство
+              </div>
+              <a href="mailto:career@wesma.ru" class="footer-inner__link footer-inner__link--email">
+                career@wesma.ru
+              </a>
+            </div>
+            <div class="footer-inner__block">
+              <div class="footer-inner__title">
+                Офисы на карте
+              </div>
+              <div class="footer-inner__address">
+                <div class="footer-inner__address-item">
+                  <div class="footer-inner__address-title">
+                    г. Москва
+                  </div>
+                  <div class="footer-inner__address-info">
+                    Гостиничный проезд 4Б, офис 401 БЦ Город (МЦК Окружная, м. Окружная)
+                  </div>
+                </div>
+                <div class="footer-inner__address-item">
+                  <div class="footer-inner__address-title">
+                    г. Брянск
+                  </div>
+                  <div class="footer-inner__address-info">
+                    ул. Ульянова, 4, офис 214А
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-inner__item">
+            <div class="footer-inner__block">
+              <div class="footer-inner__title">
+                Отдел технической поддержки
+              </div>
+              <a href="mailto:support@wesma.ru" class="footer-inner__link footer-inner__link--email">
+                support@wesma.ru
+              </a>
+            </div>
+            <div class="footer-inner__block">
+              <div class="footer-inner__title">
+                Связь с руководством
+              </div>
+              <a href="mailto:support@wesma.ru" class="footer-inner__link footer-inner__link--email">
+                info@wesma.ru
+              </a>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+
+
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+.ourClients {
+    padding: 100px 0;
+    background: #e9ebf7;
+}
+
+.ourClients .btn-magic {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.ourClients .btn-magic span {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: #000;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.ourClients .btn-magic:hover {
+    color: #fff;
+}
+
+.ourClients .btn-magic:hover span {
+  width: 225%;
+  height: 562px;
+}
+.ourClients .btn-magic:active {
+  background-color: #000;
+}
+
+.ourClients .title-section,
+.ourDetails .title-section,
+.ourOffice .title-section {
+    color: #292929!important;
+    padding: 35px 0;
+}
+.ourClients .title-section {
+    padding: 0;
+}
+.ourClients p {
+    font-size: 14px;
+    line-height: 25px;
+    margin: 20px 0 30px 0;
+}
+
+.ourClients .imgItem img {
+    width: 150px;
+    filter: grayscale(100%);
+    opacity: 0.5;
+}
+.ourClients .imgItem:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+.ourClients {
+    position: relative;
+}
+
+.itemsAlbum {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.imgItem {
+    flex-basis: 20%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+ @media screen and (max-width: 380px) {
+ .ourClients .imgItem {
+    float: left;
+    margin: 0 auto;
+    display: block;
+    width: 46%;
+    margin-right: 8%;
+}
+.ourClients .imgItem:nth-child(2n+2) {
+    margin-right: 0;
+}
+.ourClients .imgItem img {
+    max-width: 100%;
+    height: auto;
+}
+ }

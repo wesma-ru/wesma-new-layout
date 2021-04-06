@@ -1,0 +1,14 @@
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-link a {
+  display: inline-block;
+  margin: 0 10px;
+  color: $dark;
+  font-size: 11px;
+  line-height: 1.5;
+  text-decoration: underline;
+}

@@ -1,0 +1,118 @@
+.input,
+.textarea {
+   border-radius: 20px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 16px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+    border: 1px solid $dark;
+  }
+
+  .textarea {
+    height: 390px;
+    resize: none;
+  }
+  
+  .cut {
+    background-color: transparent;
+    border-radius: 10px;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 50%;
+  }
+  
+  .cut-short {
+    width: 50px;
+  }
+  
+  .input:focus ~ .cut,
+  .input:not(:placeholder-shown) ~ .cut,
+  .textarea:focus ~ .cut {
+    transform: translateY(8px);
+  }
+  
+  .placeholder {
+    color: #65657b;
+    font-family: sans-serif;
+    left: 20px;
+    font-size: 16px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+  }
+  
+  .input:focus ~ .placeholder,
+  .input:not(:placeholder-shown) ~ .placeholder,
+  .textarea:focus ~ .placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+  }
+  
+  .input:not(:placeholder-shown) ~ .placeholder {
+    color: #808097;
+  }
+  
+  .input:focus ~ .placeholder,
+  .textarea:focus ~ .placeholder {
+    color: #fff;
+  }
+
+  .input:focus ~.cut,
+  .textarea:focus ~.cut {
+    background-color: $green;
+  }
+
+.input-box {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-left: 50px;
+}
+
+.input-box input {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  color: #000;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  outline: none !important;
+  background: transparent;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.input-box input[type="file"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.input-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/paperclip.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}

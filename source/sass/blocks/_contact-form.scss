@@ -1,0 +1,27 @@
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-form__item {
+    flex-basis: 48%;
+}
+
+.contact-form__list-item {
+    margin-bottom: 30px;
+}
+
+.contact-form__list-input {
+    position: relative;
+    height: 50px;
+}
+
+.contact-form__list-textarea {
+    position: relative;
+}
+
+.contact-form__btn {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,24 @@
+.number-info {
+  text-align: center;
+}
+
+.number-info__title {
+  font-size: 100px;
+  line-height: 1.5;
+  color: $dark;
+}
+
+.number-info__img {
+  margin-bottom: 20px;
+}
+
+.number-info__img img {
+ margin: 0 auto;
+}
+
+.number-info__text {
+  padding: 0 40px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: $dark;
+}

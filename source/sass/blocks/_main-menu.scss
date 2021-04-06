@@ -1,0 +1,55 @@
+.main-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  max-height: 100vh;
+  padding: 30px 35px;
+  background: #ffffff;
+  border-right: 2px solid #e9ebf7;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition: width 0.4s ease, padding 0.4s ease;
+  -o-transition: width 0.4s ease, padding 0.4s ease;
+  transition: width 0.4s ease, padding 0.4s ease;
+  transition-delay: 0.5s; 
+}
+
+.main-menu__item {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease, -webkit-transform 0.4s ease;
+  transition: opacity 0.3s ease, -webkit-transform 0.4s ease;
+  -o-transition: opacity 0.3s ease, -o-transform 0.4s ease;
+  transition: opacity 0.3s ease, transform 0.4s ease;
+  transition: opacity 0.3s ease, transform 0.4s ease, -webkit-transform 0.4s ease, -o-transform 0.4s ease;
+  will-change: opacity, transform;
+  -webkit-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.main-menu.locked .main-menu__item {
+  opacity: 0;
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.main-menu.locked {
+  width: 54px;
+}
+
+.main-menu.locked:hover {
+  width: auto;
+}
+
+.main-menu.locked:hover .main-menu__item {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}

@@ -1,0 +1,120 @@
+.develop {
+    max-width: 1920px;
+    margin: 0 auto;
+    &__wrap {
+      position: relative;
+    }
+  
+    &__list {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  
+    &__item {
+      position: relative;
+      cursor: pointer;
+      padding: 20px 50px 50px 50px;
+      border: 1px solid rgba(233, 235, 247, 1);
+      transition: background-color 0.5s ease;
+      &.active {
+        background-color: #1a1a1a;
+        & .develop__word {
+          opacity: 1;
+        }
+  
+        & .develop__name {
+          opacity: 0;
+        }
+  
+        & .develop__number {
+          color: #fff;
+        }
+      }
+    }
+  
+    &__number {
+      margin-bottom: 30px;
+      font-family: "Exo20-Bold";
+      font-weight: 400;
+      font-style: normal;
+      color: #000000;
+    }
+  
+    &__name {
+      font-family: "Exo20-Bold";
+      font-weight: 700;
+      font-style: normal;
+      font-size: 23px;
+      color: #000000;
+    }
+  
+    &__word {
+      opacity: 0;
+      text-align: center;
+      font-family: "Exo20-Bold";
+      font-weight: 700;
+      line-height: 100%;
+      font-style: normal;
+      font-size: 500px;
+      color: #fff;
+      transition: opacity 1s ease;
+    }
+  
+    &__background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      // background: url("../img/image-bg-1.jpg") no-repeat center / cover;
+      z-index: -1;
+    }
+  }
+  
+  .line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    margin: 50px 0 0 50px;
+  
+    & .x {
+      height: 1px;
+      width: 0%;
+      background-color: #fff;
+    }
+  
+    & .y {
+      height: 0%;
+      width: 1px;
+      background-color: #fff;
+    }
+  
+    &__top.top {
+      position: absolute;
+      width: 15px;
+      top: 0;
+      // left: 0;
+    }
+  
+    &__left.left {
+      position: absolute;
+      // bottom: 0;
+      left: 0;
+    }
+  
+    &__right.right {
+      position: absolute;
+      // top: 0;
+      right: 0;
+    }
+  
+    &__bottom.bottom {
+      position: absolute;
+      // right: 0;
+      bottom: 0;
+    }
+  }
+  

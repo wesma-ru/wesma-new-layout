@@ -1,0 +1,65 @@
+.rating-list {
+  position: absolute;
+  top: -160%;
+  left: 100%;;
+  z-index: 5;
+  margin-top: 0;
+  padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 290px;
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #000;
+  visibility: hidden; 
+  opacity: 0; 
+  transition: visibility 1s .25s,opacity .25s 0s;
+}
+
+.rating:hover .rating-list {
+  visibility: visible; 
+  opacity: 1; 
+}
+
+.rating-list li {
+  padding-left: 76px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.6;
+  text-align: left;
+  color: #e3c34f;
+  position: relative;
+  font-size: 14px;
+    color: #989898;
+padding-left: 76px;
+}
+
+.rating-list li + li {
+  margin-top: 45px;
+}
+
+.rating-list li::before {
+  content: '';
+  display: block;
+  margin-top: -31px;
+  width: 57px;
+  height: 62px;
+  background: url("../../img/runet.png") 0 0 no-repeat;
+  position: absolute;
+  top: 50%;
+  left: -5px;
+}
+
+.rating-list__text a {
+  border-color: rgba(255,40,40,.25);
+  border-bottom: 1px solid #e3c34f;
+  text-decoration: none;
+  color: #e3c34f;
+  transition: border .25s;
+  transition: border .25s,color .25s;
+}
+
+.rating-list__text a:hover {
+  border-bottom: none;
+}
+ 
